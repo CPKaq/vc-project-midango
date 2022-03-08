@@ -128,7 +128,7 @@ def try_av(arg: str) -> int:
     except ValueError:
         if arg[0] == 'a':
             r = int(arg[2:])
-        elif arg[0] == 'b':
+        elif arg[0] == 'b' or arg[0] == 'B':
             r = bv2av(arg)
     finally:
         return r
